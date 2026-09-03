@@ -137,7 +137,7 @@ class ChigagoDenR1:
         self.fonte.set_density('g/cm3', 4.6781)
 
         self.materiais = openmc.Materials([self.combustivel,self.moderador,self.ar,self.aluminio,self.SS304,self.fonte,])
-        self.materiais.cross_sections = '/opt/nuclear-data/endfb-viii.0-hdf5/cross_sections.xml' 
+        #self.materiais.cross_sections = '/opt/nuclear-data/endfb-viii.0-hdf5/cross_sections.xml' 
         if simu:
             self.materiais.export_to_xml()
         
